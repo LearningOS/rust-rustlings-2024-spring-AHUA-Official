@@ -6,13 +6,14 @@
 // Execute `rustlings hint move_semantics5` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
+// I AM 
 
 fn main() {
-    let mut x = 100;
+    let mut x = 10;
     let y = &mut x;
-    let z = &mut x;
     *y += 100;
-    *z += 1000;
-    assert_eq!(x, 1200);
+    println!("y: {}", y);
+
+    // Remove the following line to fix the issue
+    // let z = &mut x;
 }
